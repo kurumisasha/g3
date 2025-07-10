@@ -10,7 +10,8 @@
 
     <div class="container">
         <h1>Voucher Generator</h1>
-
+        
+        <!-- Form untuk memasukkan nomor kartu -->
         <form id="voucherForm">
             <label for="cardNumber">Enter Card Number:</label>
             <input type="text" id="cardNumber" placeholder="Enter card number" required>
@@ -18,8 +19,9 @@
             <button id="generateButton" type="button">Generate Voucher</button>
         </form>
 
-        <div id="voucherDetails">
-            <!-- Voucher details will be shown here -->
+        <!-- Detail Voucher yang akan ditampilkan -->
+        <div id="voucherDetails" class="voucher-details">
+            <!-- Voucher details will be dynamically added here -->
         </div>
     </div>
 
