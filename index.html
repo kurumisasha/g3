@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voucher Generator</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voucher Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Voucher Generator</h1>
 
-    <!-- Form for Voucher Generation -->
-    <form id="voucherForm">
-      <label for="cardNumber">Masukkan Nomor Kartu:</label>
-      <input type="text" id="cardNumber" name="cardNumber" required>
-      <button type="submit">Generate Voucher</button>
-    </form>
+    <div class="container">
+        <h1>Voucher Generator</h1>
 
-    <!-- Result Section -->
-    <div id="voucherResult" class="hidden">
-      <h2>Hasil Voucher:</h2>
-      <pre id="voucherCode"></pre>
+        <form id="voucherForm">
+            <label for="cardNumber">Enter Card Number:</label>
+            <input type="text" id="cardNumber" placeholder="Enter card number" required>
+
+            <button id="generateButton" type="button">Generate Voucher</button>
+        </form>
+
+        <div id="voucherDetails">
+            <!-- Voucher details will be shown here -->
+        </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
